@@ -22,7 +22,7 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { background: #010101; }
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -140,7 +140,7 @@ header .scrolldown a:hover { color: #11ABB0; }
    left: 0;
    top: 0;
 }
-.opaque { background-color: #333; }
+.opaque { background-color: #010101; }
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -219,11 +219,12 @@ ul#nav li.current a { color: #F06000; }
 #about .main-col { padding-right: 5%; }
 #about .download .button {
    margin-top: 6px;
-   background: #444;
+   background: #FFFFFF;
+   color: #010101;
 }
 #about .download .button:hover {
-   background: #fff;
-   color: #2B2B2B;
+   background: #11ABB0;
+   color: #010101;
 }
 #about .download .button i {
    margin-right: 15px;
@@ -934,14 +935,14 @@ call-to-action .button {
 footer {
    padding-top: 48px;
    margin-bottom: 48px;
-   color: #010101;
+   color: #303030;
    font-size: 14px;
    text-align: center;
    position: relative;
 }
 
-footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+footer a, footer a:visited { color: #FFFFFF; }
+footer a:hover, footer a:focus { color: #11ABB0; }
 
 /* copyright */
 footer .copyright {
@@ -996,7 +997,7 @@ footer .social-links li:first-child { margin-left: 0; }
 	display: block;
 	width: 60px;
 	height: 60px;
-	background-color: #525252;
+	background-color: #FFFFFF;
 
 	-webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
@@ -1004,7 +1005,7 @@ footer .social-links li:first-child { margin-left: 0; }
    -ms-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
 
-   color: #fff;
+   color: #010101;
    font-size: 21px;
    line-height: 60px;
  	border-radius: 100%;
