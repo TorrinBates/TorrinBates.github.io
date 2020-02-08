@@ -326,35 +326,30 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
+.javascript {
   	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
-}
-.illustrator {
-  	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
-}
-.wordpress {
-  	width: 50%;
   	-moz-animation: wordpress 2s ease;
   	-webkit-animation: wordpress 2s ease;
 }
-.css {
-  	width: 90%;
+.python {
+  	width: 95%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
-.html5 {
-  	width: 80%;
+.csharp {
+  	width: 85%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
-.jquery {
-  	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
+.mc {
+   width: 40%;
+   -moz-animation: html5 2s ease;
+   -webkit-animation: html5 2s ease;
+}
+.cplusplus {
+   width: 60%;
+   -moz-animation: wordpress 2s ease;
+   -webkit-animation: wordpress 2s ease;
 }
 
 @-moz-keyframes photoshop {
@@ -371,11 +366,11 @@ ul#nav li.current a { color: #F06000; }
 }
 @-moz-keyframes css {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 95%;  }
 }
 @-moz-keyframes html5 {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 85%;  }
 }
 @-moz-keyframes jquery {
   0%   { width: 0px;  }
@@ -392,7 +387,7 @@ ul#nav li.current a { color: #F06000; }
 }
 @-webkit-keyframes wordpress {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 60%;  }
 }
 @-webkit-keyframes css {
   0%   { width: 0px;  }
@@ -402,6 +397,10 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
+@-webkit-keyframes html5 {
+   0%   { width: 0px;  }
+   100% { width: 40%;  }
+ }
 @-webkit-keyframes jquery {
   0%   { width: 0px;  }
   100% { width: 50%;  }
@@ -993,7 +992,8 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a {
 	text-decoration: none;
-	border: 0 none;
+	border-style: solid;
+   border-width: 2px;
 	display: block;
 	width: 60px;
 	height: 60px;
