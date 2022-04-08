@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Clock from './Clock';
 
 function App() {
   const [cmd, setcmd] = useState("Torrin Bates");
@@ -30,6 +31,7 @@ function App() {
       </svg>
     </div>
     <div className="stand"/>
+    <Clock />
   </div>
   );
 }
