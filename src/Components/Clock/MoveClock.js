@@ -13,9 +13,8 @@ export default function MoveClock() {
           cx: s.select("#face").getBBox().cx,
           cy: s.select("#face").getBBox().cy,
         },
-        angle = 0,
         easing = function(a) {
-          return a==!!a?a:Math.pow(4,-10*a)*Math.sin((a-.075)*2*Math.PI/.3)+1;
+          return a===!!a?a:Math.pow(4,-10*a)*Math.sin((a-.075)*2*Math.PI/.3)+1;
         };
 
     var sshadow = seconds.clone(),
