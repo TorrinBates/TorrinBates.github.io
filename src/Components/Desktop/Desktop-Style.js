@@ -5,7 +5,7 @@ export const Imac = styled.div`
     perspective: 250px;
     z-index: 3;
     position: absolute;
-    bottom: 10%;
+    bottom: 13%;
     left: 50%;
 `;
 

@@ -1,4 +1,4 @@
-<svg version="1.1" id="clock" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="300px" height="300px" viewBox="50 50 400 500" xmlSpace="preserve">
+<svg version="1.1" id="clock" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="400px" height="400px" viewBox="50 50 400 500" xmlSpace="preserve">
     <circle id="face" fill="#F4F3ED" cx="243.869" cy="250.796" r="130.8"/>
     <path id="rim" fill="#383838" d="M243.869,101.184c-82.629,0-149.612,66.984-149.612,149.612c0,82.629,66.983,149.612,149.612,149.612
 	    S393.48,333.425,393.48,250.796S326.498,101.184,243.869,101.184z M243.869,386.455c-74.922,0-135.659-60.736-135.659-135.659
