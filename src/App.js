@@ -1,19 +1,16 @@
 import React from "react";
-import { Base, Table } from "./Components/App-Style";
-import Clock from './Components/Clock/Clock';
-import Desktop from "./Components/Desktop/Desktop";
-import Coffee from "./Components/Coffee/Coffee";
+import { connect } from "react-redux";
+import { selectRendered } from "./Redux/page/page.selector";
+import Home from "./Components/Home/Home";
 
-function App() {
-  
+function App(props) {
     return(
-        <Base>
-            <Desktop />
-            <Clock />
-            <Coffee />
-            <Table />
-        </Base>
+        props.rendered === 0 ? <Home /> : <h1>Hello</h1>
     );
 }
 
-export default App;
+const mapStateToProps = state => ({
+    rendered: selectRendered(state)
+})
+
+export default connect(mapStateToProps)(App);

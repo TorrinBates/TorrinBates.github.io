@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from "styled-components";
+import styled from "styled-components";
 
 export const Imac = styled.div`
     width: 600px;
@@ -52,34 +52,16 @@ export const Stand = styled.div`
     box-shadow: 0 4px 0 0 #D5D5D5;
 `;
 
-export const Container = styled.div`
-    display: flex;
-`;
-
-export const Name = styled.h1`
+export const Option = styled.h1`
     color: white;
     font-family:'Times New Roman', Times, serif;
     font-size: 45px;
     margin: 0px;
-`;
+    opacity: ${props => props.selected ? '100' : '50'}%;
 
-const Blinking = keyframes`
-    50% {
-        opacity: 0;
+    &:before {
+        content: '${props => props.selected ? '\u276F' : ''}';
     }
-`;
-
-const animationRule = css(
-    ['', ' 1s step-start infinite;'],
-    Blinking
-);
-
-export const Blink = styled.h1`
-    color: white;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 50px;
-    margin: 5px 0px 0px -5px;
-    animation: ${animationRule};
 `;
 
 export const Apple = styled.svg`

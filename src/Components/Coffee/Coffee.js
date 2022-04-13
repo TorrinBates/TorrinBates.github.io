@@ -12,7 +12,7 @@ function Coffee() {
                 <Top>
                     <SteamGroup steam={steam}>
                         {
-                            Order.map(i => <Steam i={i}/>)
+                            Order.map(i => <Steam key={i} i={i}/>)
                         }
                     </SteamGroup>
                     <Circle>

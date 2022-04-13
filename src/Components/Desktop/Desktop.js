@@ -1,26 +1,17 @@
-import React, { useState } from 'react';
-import {Imac, Screen, Camera, Chin, Stand, Blink, Container, Name, Apple} from './Desktop-Style'
+import React from 'react';
+import { connect } from "react-redux";
+import { selectSelected } from '../../Redux/page/page.selector';
+import {Imac, Screen, Camera, Chin, Stand, Option, Apple} from './Desktop-Style'
 
-function Desktop() {
-    const [cmd, setcmd] = useState("Torrin Bates");
-    const captureKey = (e) => {
-      if (e.keyCode === 8) { setcmd(cmd.slice(0, -1)); }
-      else {
-        var inp = String.fromCharCode(e.keyCode);
-        if (/[a-zA-Z0-9-_ ]/.test(inp) && cmd.length < 21) {
-          setcmd(cmd+e.key.toLowerCase());
-        }
-      }
-    }
-
+function Desktop(props) {
+    const { selected } = props;
     return(
         <Imac>
-            <Screen onKeyDown={captureKey} tabIndex="0">
+            <Screen>
                 <Camera/>
-                <Container>
-                    <Name>&#10095; {cmd}</Name>
-                    <Blink>&#9646;</Blink>
-                </Container>
+                <Option selected={selected === 1}>About</Option>
+                <Option selected={selected === 2}>Experience</Option>
+                <Option selected={selected === 3}>Work</Option>
             </Screen>
             <Chin>
                 <Apple xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -32,4 +23,8 @@ function Desktop() {
     );
 }
 
-export default Desktop;
+const mapStateToProps = state => ({
+    selected: selectSelected(state)
+})
+
+export default connect(mapStateToProps)(Desktop);
