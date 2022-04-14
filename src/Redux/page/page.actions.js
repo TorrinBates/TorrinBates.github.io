@@ -1,5 +1,10 @@
-export const setRendered = () => ({
+export const setRendered = item => ({
     type: 'SET_RENDERED',
+    payload: item
+});
+
+export const renderCommit = () => ({
+    type: 'RENDER_COMMIT',
 });
 
 export const increaseSelected = () => ({

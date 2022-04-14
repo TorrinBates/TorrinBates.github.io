@@ -5,6 +5,7 @@ export const Container = styled.div`
     bottom: 6%;
     left: 30%;
     z-index: 3;
+    cursor: pointer;
 `;
 
 export const Cup = styled.div`

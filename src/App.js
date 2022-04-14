@@ -2,11 +2,11 @@ import React from "react";
 import { connect } from "react-redux";
 import { selectRendered } from "./Redux/page/page.selector";
 import Home from "./Components/Home/Home";
+import UseSideBar from "./Components/UseSiderBar/UseSideBar";
 
 function App(props) {
-    return(
-        props.rendered === 0 ? <Home /> : <h1>Hello</h1>
-    );
+    const { rendered } = props;
+    return rendered === 0 ? <Home /> : <UseSideBar rendered={rendered} />;
 }
 
 const mapStateToProps = state => ({
