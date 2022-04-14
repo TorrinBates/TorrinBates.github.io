@@ -8,6 +8,7 @@ const pageReducer = (state = INITIAL_STATE, action) => {
         case 'SET_RENDERED':
             return {
                 ...state,
+                selected: 1,
                 rendered: action.payload
             }
         case 'RENDER_COMMIT':

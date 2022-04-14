@@ -1,8 +1,17 @@
 import React from "react";
+import { Container, Projects } from "./Work-Style";
+import Project from "../Project/Project";
 
 function Work() {
     return(
-        <h1>Work</h1>
+        <Container>
+            <Projects>
+                <Project />
+                <Project />
+                <Project />
+                <Project />
+            </Projects>
+        </Container>
     );
 }
 
