@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;  
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(35deg, #B49CFF, #F3F0FC);
 `;
 
 export const Projects = styled.div`

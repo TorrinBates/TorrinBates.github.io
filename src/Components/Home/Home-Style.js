@@ -18,3 +18,13 @@ export const Table = styled.div`
     background: #96794f;
     z-index: 2;
 `;
+
+export const Name = styled.h1`
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    margin: 0em .7em .2em 0em;
+    font-family: 'Whisper', cursive;
+    font-size: 2.5em;
+`;
