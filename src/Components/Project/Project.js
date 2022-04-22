@@ -1,9 +1,16 @@
 import React from "react";
-import { Image } from "./Project-Style";
+import { Image, Link, Info, Title } from "./Project-Style";
 
-function Project() {
+function Project(props) {
+    const { title, url, justify, align } = props.info;
     return(
-        <Image />
+        <Image justify={justify} align={align} >
+            <Link href={url}>
+                <Info>
+                    <Title>{title}</Title>
+                </Info>
+            </Link>
+        </Image>
     );
 }
 
