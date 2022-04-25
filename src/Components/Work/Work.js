@@ -5,7 +5,6 @@ import ProjectsArray from "./ProjectsObject";
 
 function Work() {
 
-
     return(
         <Container>
             {

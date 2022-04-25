@@ -24,7 +24,7 @@ export const Info = styled.div`
     height: 100%;
     border-radius: .4em;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 7fr;
     transition: .7s;
 
     &:hover {
@@ -35,5 +35,22 @@ export const Info = styled.div`
 
 export const Title = styled.h1`
     color: white;
-    font-size: 1.2em;
+    font-size: 2em;
+    font-weight: bold;
+    margin: .4em 0 0 .3em;
+    grid-row: 1;
+`;
+
+export const Desc = styled.h1`
+    color: white;
+    font-size: .8em;
+    margin: .7em 0 0 1em;
+    grid-row: 2;
+`;
+
+export const Language = styled.div`
+    height: 10%;
+    width: 10%;
+    justify-self: end;
+    margin: 0 1em .7em 0;
 `;

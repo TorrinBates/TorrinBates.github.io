@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as LinkedIn } from "./linkedin.svg";
-import { ReactComponent as GitHub } from "./github.svg";
+import { ReactComponent as LinkedIn } from "./Company Icons/linkedin.svg";
+import { ReactComponent as GitHub } from "./Company Icons/github.svg";
 import { Container, Logo } from "./IconLinks-Style";
 
 function IconLinks() {
