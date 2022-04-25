@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
 export const Image = styled.div`
-    width: 85%;
-    height: 85%;
+    width: 92%;
+    height: 92%;
     justify-self: ${props => props.justify ? 'end' : 'start'};
     align-self: ${props => props.align ? 'end' : 'start'};
-    background-color: plum;
     background-size: cover;
     background-position: center;
     border-radius: .4em;
     overflow: hidden;
+    background-image: url(${props => props.image});
+    transition: 1.5s ease-in-out;
 `;
 
 export const Link = styled.a`
@@ -24,9 +25,10 @@ export const Info = styled.div`
     border-radius: .4em;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    transition: .7s;
 
     &:hover {
-        opacity: .8;
+        opacity: .95;
         transition: .7s;
     }
 `;
