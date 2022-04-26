@@ -23,7 +23,7 @@ const ProjectsArray = [
     { 
         title: "Ford ", url: "https://github.com/TorrinBates/fordwebapp", justify: false, align: false, language: <Rct/>,
         desc: "A web app that was built using JavaScript, ReactJS, and Amazon Web Services(AWS).  This project was built as an internal data entry tool to support an Augmented Reality(AR) owners manual iPhone app.  Leveraging this web app, non-technical staff could easily add and modify vehicles and their respective information via API for the iPhone app to pull in.",
-        images: { base: "https://raw.githubusercontent.com/TorrinBates/fordwebapp/master/Images/", sub: ["FordWebApp.png", "CarMedia.png", "AddCar.png"] }
+        images: { base: "https://raw.githubusercontent.com/TorrinBates/fordwebapp/master/Images/", sub: ["Dashboard.PNG", "AddMedia.PNG", "AddVehicle.PNG"] }
     }
 ];
 
