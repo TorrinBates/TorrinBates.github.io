@@ -57,6 +57,13 @@ export const Option = styled.h1`
     font-family:'Times New Roman', Times, serif;
     font-size: 45px;
     margin: 0px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     opacity: ${props => props.selected ? '100' : '50'}%;
 
     &:before {

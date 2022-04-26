@@ -1,17 +1,28 @@
 import React from 'react';
 import { connect } from "react-redux";
+import { renderCommit, setSelected } from "../../Redux/page/page.actions";
 import { selectSelected } from '../../Redux/page/page.selector';
 import {Imac, Screen, Camera, Chin, Stand, Option, Apple} from './Desktop-Style'
 
 function Desktop(props) {
-    const { selected } = props;
+    const { selected, renderCommit, setSelected } = props;
+    const onClick = (val) => {
+        if (selected === val) {
+            renderCommit();
+        }
+        else {
+            console.log(val);
+            setSelected(val);
+        }
+    }
+
     return(
         <Imac>
             <Screen>
                 <Camera/>
-                <Option selected={selected === 1}>About</Option>
-                <Option selected={selected === 2}>Experience</Option>
-                <Option selected={selected === 3}>Work</Option>
+                <Option onClick={() => onClick(1)} selected={selected === 1}>About</Option>
+                <Option onClick={() => onClick(2)} selected={selected === 2}>Experience</Option>
+                <Option onClick={() => onClick(3)} selected={selected === 3}>Work</Option>
             </Screen>
             <Chin>
                 <Apple xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -27,4 +38,9 @@ const mapStateToProps = state => ({
     selected: selectSelected(state)
 })
 
-export default connect(mapStateToProps)(Desktop);
+const mapDispatchToProps = dispatch => ({
+    renderCommit: () => dispatch(renderCommit()),
+    setSelected: item => dispatch(setSelected(item))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Desktop);

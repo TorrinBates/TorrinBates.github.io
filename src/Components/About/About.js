@@ -1,8 +1,13 @@
 import React from "react";
+import { Container, Border } from "./About-Style";
 
 function About() {
     return(
-        <h1>About</h1>
+        <Container>
+            <Border>
+                
+            </Border>
+        </Container>
     );
 }
 

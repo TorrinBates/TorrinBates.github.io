@@ -37,14 +37,14 @@ export const Title = styled.h1`
     color: white;
     font-size: 2em;
     font-weight: bold;
-    margin: .4em 0 0 .3em;
+    margin: .2em 0 0 .3em;
     grid-row: 1;
 `;
 
 export const Desc = styled.h1`
     color: white;
     font-size: .8em;
-    margin: .7em 0 0 1em;
+    margin: .4em 1em 0 1em;
     grid-row: 2;
 `;
 
