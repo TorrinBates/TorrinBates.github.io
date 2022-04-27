@@ -5,12 +5,18 @@ export const Image = styled.div`
     height: 92%;
     justify-self: ${props => props.justify ? 'end' : 'start'};
     align-self: ${props => props.align ? 'end' : 'start'};
-    background-size: cover;
-    background-position: center;
     border-radius: .4em;
     overflow: hidden;
     background-image: url(${props => props.image});
+    background-size: ${props => props.cover ? `cover` : `contain`};
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: ${props => props.color};
     transition: 1.5s ease-in-out;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
 `;
 
 export const Link = styled.a`

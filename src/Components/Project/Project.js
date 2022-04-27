@@ -17,10 +17,11 @@ class Project extends React.Component {
     }
 
     render() {
-        const { title, url, justify, align, images, desc, language } = this.props.info;
+        const { title, url, justify, align, images, desc, language, color } = this.props.info;
+        const index = this.state.count%images.sub.length;
 
         return(
-            <Image justify={justify} align={align} image={images.base+images.sub[this.state.count%images.sub.length]}>
+            <Image justify={justify} align={align} image={images.base+images.sub[index].file} cover={images.sub[index].cover} color={color}>
                 <Link href={url}>
                     <Info>
                         <Title>{title}</Title>
