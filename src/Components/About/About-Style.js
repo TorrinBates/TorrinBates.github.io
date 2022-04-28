@@ -19,30 +19,40 @@ export const Border = styled.div`
     background-color: #7ca77b;
 `;
 
-const Steaming = keyframes`
+const Rotating = keyframes`
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 `;
 
-const SteamingRule = css(
-    ['', ' 5s linear infinite;'],
-    Steaming
+const RotatingRule = css(
+    ['', ' 15s linear infinite;'],
+    Rotating
 );
 
-export const Circle = styled.div`
-    border: .4em dashed black;
+export const CircleGroup = styled.div`
     border-radius: 50%;
     width: 28%;
     aspect-ratio: 1 / 1;
     margin: 2%;
     float: left;
-    animation: ${SteamingRule};
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 `;
 
-export const Test = styled.div`
+export const DashedCircle = styled.div`
+    border: .4em dashed black;
+    border-radius: 50%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    justify-self: center;
+    align-self: center;
+    animation: ${RotatingRule};
+    grid-column: 1;
+    grid-row: 1;
+`;
+
+export const ImageCircle = styled.div`
     border-radius: 50%;
     width: 95%;
     aspect-ratio: 1 / 1;
@@ -52,6 +62,8 @@ export const Test = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    grid-column: 1;
+    grid-row: 1;
 `;
 
 export const Title = styled.h1`
