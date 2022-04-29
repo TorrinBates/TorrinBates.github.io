@@ -1,4 +1,5 @@
 import styled, { keyframes, css } from "styled-components";
+import img from "./profile.jpg";
 
 export const Container = styled.div`
     height: 100vh;
@@ -58,7 +59,7 @@ export const ImageCircle = styled.div`
     aspect-ratio: 1 / 1;
     justify-self: center;
     align-self: center;
-    background-image: url(https://torrinbates.github.io/images/profile.jpg);
+    background-image: url(${img});
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -74,4 +75,9 @@ export const Title = styled.h1`
 export const Text = styled.h1`
     font-size: 1.2em;
     margin: 0 2%;
+`;
+
+export const Icon = styled.h1`
+    height: 6%;
+    width: 6%;
 `;
