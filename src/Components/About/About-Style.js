@@ -15,8 +15,8 @@ export const Border = styled.div`
     align-self: center;
     border: .4em solid black;
     border-radius: 1em;
-    background-color: transparent;
     overflow-x: hidden;
+    background-color: transparent;
     background-color: #7ca77b;
 `;
 
@@ -77,7 +77,31 @@ export const Text = styled.h1`
     margin: 0 2%;
 `;
 
-export const Icon = styled.h1`
-    height: 6%;
-    width: 6%;
+const Across = keyframes`
+    from { transform: translateX(-10%); }
+    to { transform: translateX(2000%) }
+`;
+
+const AcrossRule = css(
+    ['', ' 10s linear infinite;'],
+    Across
+);
+
+export const Panel = styled.div`
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+`;
+
+export const Icon = styled.div`
+    height: 4.5em;
+    width: 4.5em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: -10%;
+    animation: ${AcrossRule};
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    animation-delay: ${props => props.delay}s;
 `;
