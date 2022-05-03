@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    align-self: end;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    margin-left:-72px;
     display: flex;
-    justify-content: center;
-    margin-bottom: 1.5em;
 `;
 
 export const Logo = styled.a`

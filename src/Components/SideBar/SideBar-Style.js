@@ -3,10 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     grid-column: 1 / span 1;
     background-color: black;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 100%;
+    position: relative;
 `;
 
 export const Tabs = styled.div`
