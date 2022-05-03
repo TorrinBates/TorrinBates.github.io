@@ -4,6 +4,7 @@ import SideBar from "../SideBar/SideBar";
 import About from "../About/About";
 import Experience from "../Experience/Experience";
 import Work from "../Work/Work";
+import Contact from "../Contact/Contact";
 
 function UseSideBar(props) {
     const dynamicallyRender = () => {
@@ -14,6 +15,8 @@ function UseSideBar(props) {
                 return <Experience />;
             case 3:
                 return <Work />;
+            case 4:
+                return <Contact />;
             default:
                 return <Error>UNEXPECTED ERROR OCCURRED!</Error>;
         }

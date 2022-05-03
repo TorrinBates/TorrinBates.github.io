@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Border from "../Border/Border";
-import { Divider, Left, TabOption, Label, Fill, CustomButton } from "./Experience-Style";
+import { Divider, Left, TabOption, Label, Fill } from "./Experience-Style";
+import { CustomButton } from "../Shared/Shared-Style";
 
 function Experience() {
     const [selected, setSelected] = useState(0);

@@ -6,7 +6,7 @@ import { Container, Tabs, TabOption } from "./SideBar-Style";
 import IconLinks from "../IconLinks/IconLinks";
 
 function SideBar(props) {
-    const tabs = [{label:"Home", value:0}, {label:"About", value:1}, {label:"Experience", value:2}, {label:"Work", value:3}];
+    const tabs = [{label:"Home", value:0}, {label:"About", value:1}, {label:"Experience", value:2}, {label:"Work", value:3}, {label:"Contact", value:4}];
 
     return(
         <Container>

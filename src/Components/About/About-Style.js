@@ -23,7 +23,7 @@ export const CircleGroup = styled.div`
 `;
 
 export const DashedCircle = styled.div`
-    border: .4em dashed black;
+    border: .3em dashed black;
     border-radius: 50%;
     width: 100%;
     aspect-ratio: 1 / 1;

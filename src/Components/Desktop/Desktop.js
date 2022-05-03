@@ -23,6 +23,7 @@ function Desktop(props) {
                 <Option onClick={() => onClick(1)} selected={selected === 1}>About</Option>
                 <Option onClick={() => onClick(2)} selected={selected === 2}>Experience</Option>
                 <Option onClick={() => onClick(3)} selected={selected === 3}>Work</Option>
+                <Option onClick={() => onClick(4)} selected={selected === 4}>Contact</Option>
             </Screen>
             <Chin>
                 <Apple xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
