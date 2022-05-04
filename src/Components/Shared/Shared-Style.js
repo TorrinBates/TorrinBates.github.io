@@ -38,8 +38,10 @@ export const CustomButton = styled.button`
 
 export const Email = styled.a`
     justify-self: center;
-    align-self: center;
+    align-self: start;
     text-decoration: none;
+    grid-column: 1;
+    grid-row: 2;
 
     ${SharedCSS}
 `;
