@@ -4,11 +4,11 @@ import { Screen, Name, Icon, Pdf, File } from "./Mobile-Style";
 function Mobile() {
     return (
         <Screen>
-            <Name row={1}>Torrin</Name>
-            <Name row={2}>Bates</Name>
-            <Icon column={1} git={true}/>
-            <Icon column={2} git={false}/>
-            <Pdf><File/></Pdf>
+            <Name delay={0} row={1}>Torrin</Name>
+            <Name delay={.5} row={2}>Bates</Name>
+            <Icon delay={1.5} column={1} git={true} href="https://www.linkedin.com/in/torrin-bates-77981018b/"/>
+            <Icon delay={1} column={2} git={false} href="https://github.com/TorrinBates?tab=repositories"/>
+            <Pdf delay={2}><File/></Pdf>
         </Screen>
     );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useMediaQuery } from 'react-responsive'
 import Mobile from "./Components/Mobile/Mobile";
 import Desktop from "./Components/Desktop/Desktop";
@@ -8,10 +8,10 @@ function App() {
     const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
   
     return (
-      <div>
+      <Fragment>
         {isDesktopOrLaptop && <Desktop />}
         {isTabletOrMobile && <Mobile />}
-      </div>
+      </Fragment>
     );
 }
 
