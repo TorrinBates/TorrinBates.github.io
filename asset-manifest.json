@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.10ab0820.js",
+    "main.js": "/static/js/main.0ddf345c.js",
     "static/js/787.9c0f8972.chunk.js": "/static/js/787.9c0f8972.chunk.js",
     "static/media/profile.jpg": "/static/media/profile.4ffdaeeb1ab1b99e9f76.jpg",
     "static/media/Clock.svg": "/static/media/Clock.743847c3a16175f733073093d45edc31.svg",
-    "static/media/React.svg": "/static/media/React.3755b6101b4f534bc5a7d80bf2e4e178.svg",
     "index.html": "/index.html",
+    "static/media/React.svg": "/static/media/React.3755b6101b4f534bc5a7d80bf2e4e178.svg",
     "static/media/C\u0000#.svg": "/static/media/C#.c4e2e0b252d4ebec4fc78ba71c5fd694.svg",
     "static/media/github.svg": "/static/media/github.59fd2efe2a9fb00a8e639a6a924874d0.svg",
     "static/media/skiing.svg": "/static/media/skiing.3ad83f624df1cddcf8a124aa17f8c9c3.svg",
@@ -14,14 +14,15 @@
     "static/media/bike.svg": "/static/media/bike.a90dc8e566003eb02bc9892f09ae3222.svg",
     "static/media/code.svg": "/static/media/code.5d02efa8a0a0f84280000e16c8086f7e.svg",
     "static/media/games.svg": "/static/media/games.1a6e28799d03e252b37734d62dfdccd2.svg",
+    "static/media/file-lines-solid.svg": "/static/media/file-lines-solid.e935a00f8ee91d487ee91e661519e999.svg",
     "static/media/soccer.svg": "/static/media/soccer.da4eb216bddd7811c9251d1ea1d0cb9f.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.cef4344e62980389462171bcd702c1d7.svg",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.10ab0820.js.map": "/static/js/main.10ab0820.js.map",
+    "main.0ddf345c.js.map": "/static/js/main.0ddf345c.js.map",
     "787.9c0f8972.chunk.js.map": "/static/js/787.9c0f8972.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.10ab0820.js"
+    "static/js/main.0ddf345c.js"
   ]
 }
