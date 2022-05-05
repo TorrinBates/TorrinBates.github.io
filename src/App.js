@@ -1,16 +1,18 @@
 import React from "react";
-import { connect } from "react-redux";
-import { selectRendered } from "./Redux/page/page.selector";
-import Home from "./Components/Home/Home";
-import UseSideBar from "./Components/UseSiderBar/UseSideBar";
+import { useMediaQuery } from 'react-responsive'
+import Mobile from "./Components/Mobile/Mobile";
+import Desktop from "./Components/Desktop/Desktop";
 
-function App(props) {
-    const { rendered } = props;
-    return rendered === 0 ? <Home /> : <UseSideBar rendered={rendered} />;
+function App() {
+    const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
+    const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  
+    return (
+      <div>
+        {isDesktopOrLaptop && <Desktop />}
+        {isTabletOrMobile && <Mobile />}
+      </div>
+    );
 }
 
-const mapStateToProps = state => ({
-    rendered: selectRendered(state)
-})
-
-export default connect(mapStateToProps)(App);
+export default App;

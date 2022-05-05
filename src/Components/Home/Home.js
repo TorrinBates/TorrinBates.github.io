@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { renderCommit, increaseSelected, decreaseSelected } from "../../Redux/page/page.actions";
 import { Base, Table, Name } from "./Home-Style";
 import Clock from '../Clock/Clock';
-import Desktop from "../Desktop/Desktop";
+import Desktop from "../Mac/Mac";
 import Coffee from "../Coffee/Coffee";
 
 function Home(props) {
