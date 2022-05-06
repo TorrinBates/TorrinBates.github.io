@@ -30,7 +30,7 @@ export const Name = styled.h1`
     align-self: center;
     grid-column: 1 / span 2;
     grid-row: ${props => props.row};
-    margin: 0;
+    margin: -2% 0 0 0;
     padding: 0;
     transform: translateX(-200%);
     animation: ${SlideInRule};
