@@ -1,19 +1,14 @@
-import React from 'react';
+import React from "react";
 import { connect } from "react-redux";
 import { renderCommit, setSelected } from "../../Redux/page/page.actions";
-import { selectSelected } from '../../Redux/page/page.selector';
-import {Imac, Screen, Camera, Chin, Stand, Option, Apple} from './Mac-Style'
+import { selectSelected } from "../../Redux/page/page.selector";
+import {Imac, Screen, Camera, Chin, Stand, Option, Apple} from "./Mac-Style";
 
 function Mac(props) {
     const { selected, renderCommit, setSelected } = props;
     const onClick = (val) => {
-        if (selected === val) {
-            renderCommit();
-        }
-        else {
-            console.log(val);
-            setSelected(val);
-        }
+        if (selected === val) { renderCommit(); }
+        else { setSelected(val); }
     }
 
     return(

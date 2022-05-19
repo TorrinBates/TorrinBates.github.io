@@ -16,8 +16,8 @@ export const Left = styled.div`
 export const TabOption = styled.div`
     display: flex;
     border-bottom: .3em solid black;
-    border-right: ${props => props.selected ? '0' : '.3em'} solid black;
-    background-color: ${props => props.selected ? '#7ca77b' : '#3e5c3d'};
+    border-right: ${props => props.selected ? "0" : ".3em"} solid black;
+    background-color: ${props => props.selected ? "#7ca77b" : "#3e5c3d"};
     cursor: pointer;
     transition: background-color .2s ease;
 `;

@@ -8,7 +8,7 @@ const SlideIn = keyframes`
 `;
 
 const SlideInRule = css(
-    ['', ' 0.8s ease-in-out;'],
+    ["", " 0.8s ease-in-out;"],
     SlideIn
 );
 

@@ -7,7 +7,7 @@ const Rotating = keyframes`
 `;
 
 const RotatingRule = css(
-    ['', ' 15s linear infinite;'],
+    ["", " 15s linear infinite;"],
     Rotating
 );
 
@@ -64,7 +64,7 @@ const Across = keyframes`
 `;
 
 const AcrossRule = css(
-    ['', ' 10s linear infinite;'],
+    ["", " 10s linear infinite;"],
     Across
 );
 

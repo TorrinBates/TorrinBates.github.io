@@ -5,28 +5,28 @@ const INITIAL_STATE = {
 
 const pageReducer = (state = INITIAL_STATE, action) => {
     switch(action.type) {
-        case 'SET_RENDERED':
+        case "SET_RENDERED":
             return {
                 ...state,
                 selected: 1,
                 rendered: action.payload
             }
-        case 'RENDER_COMMIT':
+        case "RENDER_COMMIT":
             return {
                 ...state,
                 rendered: state.selected
             }
-        case 'INCREASE_SELECTED':
+        case "INCREASE_SELECTED":
             return {
                 ...state,
-                selected: state.selected < 3 ? state.selected+1 : state.selected
+                selected: state.selected < 4 ? state.selected+1 : state.selected
             }
-        case 'DECREASE_SELECTED':
+        case "DECREASE_SELECTED":
             return {
                 ...state,
                 selected: state.selected > 1 ? state.selected-1 : state.selected
             }
-        case 'SET_SELECTED':
+        case "SET_SELECTED":
             return {
                 ...state,
                 selected: action.payload

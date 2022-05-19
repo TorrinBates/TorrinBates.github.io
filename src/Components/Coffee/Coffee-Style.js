@@ -73,12 +73,12 @@ const FadeIn = keyframes`
 `;
 
 const FadeOutRule = css(
-    ['', ' .7s linear forwards;'],
+    ["", " .7s linear forwards;"],
     FadeOut
 );
 
 const FadeInRule = css(
-    ['', ' .7s linear backwards;'],
+    ["", " .7s linear backwards;"],
     FadeIn
 );
 
@@ -110,7 +110,7 @@ const Steaming = keyframes`
 `;
 
 const SteamingRule = css(
-    ['', ' 5s linear infinite;'],
+    ["", " 5s linear infinite;"],
     Steaming
 );
 

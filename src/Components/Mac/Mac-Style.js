@@ -64,10 +64,10 @@ export const Option = styled.h1`
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    opacity: ${props => props.selected ? '100' : '50'}%;
+    opacity: ${props => props.selected ? "100" : "50"}%;
 
     &:before {
-        content: '${props => props.selected ? '\u276F' : ''}';
+        content: '${props => props.selected ? "\u276F" : ""}';
     }
 `;
 

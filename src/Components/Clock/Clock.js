@@ -1,6 +1,6 @@
 import React from "react";
 import MoveClock from "./MoveClock";
-import { ReactComponent as ClockSVG } from './Clock.svg';
+import { ReactComponent as ClockSVG } from "./Clock.svg";
 import { ClockContainer } from "./Clock-Style";
 
 class Clock extends React.Component {

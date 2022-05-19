@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Image = styled.div`
     width: 92%;
     height: 92%;
-    justify-self: ${props => props.justify ? 'end' : 'start'};
-    align-self: ${props => props.align ? 'end' : 'start'};
+    justify-self: ${props => props.justify ? "end" : "start"};
+    align-self: ${props => props.align ? "end" : "start"};
     border-radius: .4em;
     overflow: hidden;
     background-image: url(${props => props.image});

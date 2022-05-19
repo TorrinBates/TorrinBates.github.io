@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from "react-responsive";
 import Mobile from "./Components/Mobile/Mobile";
 import Desktop from "./Components/Desktop/Desktop";
 
