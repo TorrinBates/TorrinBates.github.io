@@ -7,6 +7,7 @@ export const Grid = styled.div`
     grid-template-columns: 3fr 22fr;
     grid-template-rows: 1fr;
     background: #4E734D;
+    overflow: hidden;
 `;
 
 export const Content = styled.div`

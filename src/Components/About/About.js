@@ -22,7 +22,7 @@ function About() {
             </Text>
             <Panel>
                 {
-                    hobbies.map(obj => <Icon delay={obj.delay}>{obj.icon}</Icon>)
+                    hobbies.map(obj => <Icon key={obj.delay} delay={obj.delay}>{obj.icon}</Icon>)
                 }
             </Panel>
         </Border>

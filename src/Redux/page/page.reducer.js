@@ -1,4 +1,5 @@
 const INITIAL_STATE = {
+    previous: null,
     rendered: 0,
     selected: 1
 }
@@ -9,11 +10,13 @@ const pageReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 selected: 1,
+                previous: state.rendered,
                 rendered: action.payload
             }
         case "RENDER_COMMIT":
             return {
                 ...state,
+                previous: state.rendered,
                 rendered: state.selected
             }
         case "INCREASE_SELECTED":
