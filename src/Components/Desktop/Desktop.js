@@ -4,13 +4,17 @@ import { selectPrevious, selectRendered } from "../../Redux/page/page.selector";
 import { Screen } from "./Desktop-Styled";
 import Home from "../Home/Home";
 import UseSideBar from "../UseSiderBar/UseSideBar";
+import Slide from "../../Slide/Slide";
+
+const ReturnHome = () => <Home />;
 
 function Desktop(props) {
     const { rendered, previous } = props;
+
     return( 
         <Screen>
             {
-                rendered === 0 ? <Home /> : <UseSideBar rendered={rendered} previous={previous} />
+                rendered === 0 ? <Slide isHome={true} rendered={rendered} previous={previous} display={ReturnHome}/> : <UseSideBar isHome={false} rendered={rendered} previous={previous}/>
             }
         </Screen>
     );
