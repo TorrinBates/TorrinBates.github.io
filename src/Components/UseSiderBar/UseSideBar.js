@@ -5,7 +5,7 @@ import About from "../About/About";
 import Experience from "../Experience/Experience";
 import Work from "../Work/Work";
 import Contact from "../Contact/Contact";
-import Slide from "../../Slide/Slide";
+import Slide from "../Slide/Slide";
 
 const dynamicallyRender = (i) => {
     switch(i) {

@@ -4,7 +4,7 @@ import { selectPrevious, selectRendered } from "../../Redux/page/page.selector";
 import { Screen } from "./Desktop-Styled";
 import Home from "../Home/Home";
 import UseSideBar from "../UseSiderBar/UseSideBar";
-import Slide from "../../Slide/Slide";
+import Slide from "../Slide/Slide";
 
 const ReturnHome = () => <Home />;
 

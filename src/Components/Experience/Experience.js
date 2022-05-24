@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Border from "../Border/Border";
 import { Divider, Left, TabOption, Label, Fill } from "./Experience-Style";
-import { CustomButton } from "../Shared/Shared-Style";
+import { Resume } from "../Shared/Shared-Style";
 
 function Experience() {
     const [selected, setSelected] = useState(0);
@@ -20,7 +20,7 @@ function Experience() {
                         <Label>Trijicon</Label>
                     </TabOption>
                     <Fill>
-                        <CustomButton>Download</CustomButton>
+                        <Resume href="/TorrinBates_Resume.pdf" rel="noopener noreferrer" target="_blank">Download</Resume>
                     </Fill>
                 </Left>
             </Divider>

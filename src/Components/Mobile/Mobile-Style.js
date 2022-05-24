@@ -54,18 +54,7 @@ export const Icon = styled.a`
     animation-delay: ${props => props.delay}s;
 `;
 
-export const File = styled.div`
-    height: 58%;
-    width: 100%;
-    justify-self: center;
-    align-self: center;
-    background-image: url(${file});
-    background-repeat: no-repeat;
-    background-position: center;
-`;
-
-export const Pdf = styled.button`
-    font-size: clamp(40px, 5vw, 60px);
+export const Pdf = styled.a`
     font-weight: bold;
     color: black;
     background-color: white;
@@ -80,4 +69,9 @@ export const Pdf = styled.button`
     animation: ${SlideInRule};
     animation-fill-mode: forwards;
     animation-delay: ${props => props.delay}s;
+    text-decoration: none;
+    background-image: url(${file});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 58%;
 `;

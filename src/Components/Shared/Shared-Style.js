@@ -22,13 +22,14 @@ const SharedCSS = css`
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    text-decoration: none;
 
     &:hover{
         box-shadow: 0 0 40px 40px #abc6aa inset;
     }
 `;
 
-export const CustomButton = styled.button`
+export const Resume = styled.a`
     justify-self: center;
     align-self: end;
     margin: 10% 10px;
@@ -39,7 +40,6 @@ export const CustomButton = styled.button`
 export const Email = styled.a`
     justify-self: center;
     align-self: start;
-    text-decoration: none;
     grid-column: 1;
     grid-row: 2;
 
