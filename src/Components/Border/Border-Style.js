@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const Box = styled.div`
     width: 70%;
-    height: 80%;
+    height: 80vh;
     justify-self: center;
     align-self: center;
     border: .3em solid black;
