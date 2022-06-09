@@ -59,8 +59,8 @@ export const Text = styled.h1`
 `;
 
 const Across = keyframes`
-    from { transform: translateX(-10%); }
-    to { transform: translateX(2000%) }
+    from { transform: translateX(0em); }
+    to { transform: translateX(2000%); }
 `;
 
 const AcrossRule = css(
@@ -79,7 +79,7 @@ export const Icon = styled.div`
     width: 4.5em;
     margin-top: 1%;
     margin-bottom: 1%;
-    margin-left: -10%;
+    margin-left: -7em;
     animation: ${AcrossRule};
     grid-column: 1;
     grid-row: 1;

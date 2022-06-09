@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Border from "../Border/Border";
 import { Divider, Left, TabOption, Label, Fill } from "./Experience-Style";
 import { Resume } from "../Shared/Shared-Style";
+import JobInfo from "../JobInfo/JobInfo";
+import Jobs from "../JobInfo/JobsObject";
 
 function Experience() {
     const [selected, setSelected] = useState(0);
@@ -23,6 +25,7 @@ function Experience() {
                         <Resume href="/TorrinBates_Resume.pdf" rel="noopener noreferrer" target="_blank">Download</Resume>
                     </Fill>
                 </Left>
+                <JobInfo job={Jobs[selected]} />
             </Divider>
         </Border>
     );
